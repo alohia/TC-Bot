@@ -129,10 +129,12 @@ class AgentCmd(Agent):
         if self.agent_input_mode == 1:
             if agent_action['act_slot_response']:
                 agent_action['act_slot_response']['nl'] = ""
-                user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_response'], 'agt')
+                #user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_response'], 'agt')
+                user_nlg_sentence='I am Groot'
                 agent_action['act_slot_response']['nl'] = user_nlg_sentence
             elif agent_action['act_slot_value_response']:
                 agent_action['act_slot_value_response']['nl'] = ""
-                user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_value_response'], 'agt')
+                #user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_value_response'], 'agt')
+                user_nlg_sentence='I am Groot'
                 agent_action['act_slot_response']['nl'] = user_nlg_sentence
                 

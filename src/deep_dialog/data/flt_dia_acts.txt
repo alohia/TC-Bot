@@ -1,0 +1,7 @@
+request
+inform
+confirm_question
+confirm_answer
+greeting
+thanks
+deny

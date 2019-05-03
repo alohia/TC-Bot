@@ -64,6 +64,8 @@ class RuleSimulator(UserSimulator):
         
         # sample first action
         user_action = self._sample_action()
+        print('user action')
+        print(user_action)
         assert (self.episode_over != 1),' but we just started'
         return user_action  
         
@@ -194,7 +196,7 @@ class RuleSimulator(UserSimulator):
                 self.episode_over = True
                 self.state['diaact'] = "thanks"
 
-        self.corrupt(self.state)
+        #self.corrupt(self.state)
         
         response_action = {}
         response_action['diaact'] = self.state['diaact']

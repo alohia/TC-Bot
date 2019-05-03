@@ -287,6 +287,7 @@ def save_performance_records(path, agt, records):
 
 """ Run N simulation Dialogues """
 def simulation_epoch(simulation_epoch_size):
+    print('is this running?')
     successes = 0
     cumulative_reward = 0
     cumulative_turns = 0
@@ -313,6 +314,7 @@ def simulation_epoch(simulation_epoch_size):
 
 """ Warm_Start Simulation (by Rule Policy) """
 def warm_start_simulation():
+    print('is this running?')
     successes = 0
     cumulative_reward = 0
     cumulative_turns = 0
@@ -347,6 +349,7 @@ def warm_start_simulation():
 
 
 def run_episodes(count, status):
+    print('this runs?')
     successes = 0
     cumulative_reward = 0
     cumulative_turns = 0
